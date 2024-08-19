@@ -19,9 +19,9 @@ internal class Program
         Console.WriteLine(DivisibleByB(14, 11));
     }
 
-    // private static int DivisibleByB(int a, int b) => b > a ? b * 2: b * 2 > a ? b * 2: DivisibleByB(a, b + 1);
+    private static int DivisibleByB(int a, int b) => a < b ? b * 2 : (a+1) % b == 0 ? a + 1 : DivisibleByB(a + 1, b);
 
-    private static int DivisibleByB(int a, int b)
+    /* private static int DivisibleByB(int a, int b)
     {
 
         int number = a > b ? a + 1 : b + 1;
@@ -38,4 +38,5 @@ internal class Program
             }
         }
     }
+    */
 }
