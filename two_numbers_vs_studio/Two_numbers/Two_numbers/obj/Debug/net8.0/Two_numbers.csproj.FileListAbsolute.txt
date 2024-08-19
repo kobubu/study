@@ -1,0 +1,14 @@
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\bin\Debug\net8.0\Two_numbers.exe
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\bin\Debug\net8.0\Two_numbers.deps.json
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\bin\Debug\net8.0\Two_numbers.runtimeconfig.json
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\bin\Debug\net8.0\Two_numbers.dll
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\bin\Debug\net8.0\Two_numbers.pdb
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\Two_numbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\Two_numbers.AssemblyInfoInputs.cache
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\Two_numbers.AssemblyInfo.cs
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\Two_numbers.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\Two_numbers.dll
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\refint\Two_numbers.dll
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\Two_numbers.pdb
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\Two_numbers.genruntimeconfig.cache
+C:\Users\Igor\Desktop\перенести\repos\study\c#\two_numbers_vs_studio\Two_numbers\Two_numbers\obj\Debug\net8.0\ref\Two_numbers.dll
