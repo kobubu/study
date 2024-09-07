@@ -6,5 +6,4 @@
 # Введите свое решение ниже
 
 name = 'йцухйзцухйцхуфыжвфжыьясячмь'
-for idx, letter in enumerate(name):
-    print(f"Буква {idx+1} в этом имени - {letter}")
+[print(f"Буква {idx} в этом имени - {c}") for idx,c in enumerate(name)]
