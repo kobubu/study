@@ -10,13 +10,11 @@
 import  re
 
 FIND_VOWEL = re.compile('[уеыаоэяию]', re.IGNORECASE)
-
 string = 'Пока'
-
+result = []
 
 for c in string[::2]:
-    if re.match(FIND_VOWEL, c):
-        print('Строка мне не нравится!')
-        break
-else:
-    print('Какая хорошая строка!')
+    if FIND_VOWEL.match(c):
+        result.append(c)
+
+print('Какая хорошая строка!') if not result else print('Строка мне не нравится!')
