@@ -6,4 +6,4 @@
 # Введите свое решение ниже
 number = 20
 
-[print(number, 'x', n, '=', number*n) for n in range(1, 11)]
+[print(number, 'X', n, '=', number*n) for n in range(1, 11)]
