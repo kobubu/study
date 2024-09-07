@@ -11,3 +11,16 @@ while string != 'Да' and counter != 5:
     print('Увы, это неправильный ответ')
     counter += 1
 print('Это отлично!') if string == 'Да' else print('Это безнадёжно!')
+
+
+
+alternative:
+
+string = 'Нет'
+for _ in range(5):
+    if string == 'Да':
+        print('Это отлично!')
+        break
+    print('Увы, это неправильный ответ')
+else:
+    print('Это безнадёжно!')
