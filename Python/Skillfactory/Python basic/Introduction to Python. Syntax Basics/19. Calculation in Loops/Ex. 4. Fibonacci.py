@@ -5,14 +5,11 @@
 '''
 # Введите свое решение ниже
 n = 15
-if n <= 0:
-    print('Введите натуральное число (больше 0).')
+if n == 1 or n == 2:
+    sum_fib = 1
 else:
-    if n == 1 or n == 2:
-        sum_fib = 1
-    else:
-        a, b = 1, 1
-        for _ in range(3, n + 1):
-            sum_fib = a + b
-            a, b = b, sum_fib
-    print(sum_fib)
+    a, b = 1, 1
+    for _ in range(3, n + 1):
+        sum_fib = a + b
+        a, b = b, sum_fib
+print(sum_fib)
