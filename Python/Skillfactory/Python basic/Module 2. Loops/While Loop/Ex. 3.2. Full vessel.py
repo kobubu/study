@@ -23,7 +23,7 @@ print(exceeding_volume)
 # Задаём количество заливаемой жидкости в литрах
 v = 0.0033 * 1000
 
-cost = v - (volume%v)
+cost = round(v - (volume%v), 1)
 
 
 
