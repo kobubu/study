@@ -6,15 +6,16 @@
 Учтите, что 1 кубический метр равен 1 000 литрам (0.0033 * 1000 = 3.3).
 '''
 
-import math
-
-volume = 1000
-volume_per_time = 3.3
-actual_volume = 0
-
-while actual_volume < volume:
-    actual_volume += volume_per_time
-exceeding_volume = actual_volume - volume
+# Задаём количество заливаемой жидкости в литрах
+v = 0.0033 * 1000
+# Задаём начальный объём залитой жидкости
+cur_volume = 0
+# Создаём цикл, который будет выполняться, пока объём залитой жидкости меньше объёма сосуда.
+while cur_volume <= volume: # Делай, пока...
+    # Увеличиваем текущий объём залитой жидкости
+    cur_volume += v
+# Считаем потери
+cost = cur_volume - volume
 print(exceeding_volume)
 
 
