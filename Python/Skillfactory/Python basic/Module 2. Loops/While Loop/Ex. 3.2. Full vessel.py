@@ -19,5 +19,12 @@ cost = cur_volume - volume
 print(exceeding_volume)
 
 
+#более точное решение
+# Задаём количество заливаемой жидкости в литрах
+v = 0.0033 * 1000
+
+cost = v - (volume%v)
+
+
 
 
