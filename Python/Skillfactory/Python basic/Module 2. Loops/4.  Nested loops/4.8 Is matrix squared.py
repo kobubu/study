@@ -12,8 +12,6 @@ is_square = True
 for row in test_matrix:
     if len(row) != len(test_matrix):
         is_square = False
-        print('Матрица не квадратная')
         break
-        
-if is_square:
-    print('Матрица квадратная')
+    else:
+        continue
