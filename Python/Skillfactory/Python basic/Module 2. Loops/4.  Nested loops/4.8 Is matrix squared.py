@@ -5,15 +5,18 @@
 '''
 
 
-matrix = [[1,2,3],[2,3], [4,4,5,6]]
-row_count = 0
-column_count = 0
-for row in range(len(matrix)):
-    if len(matrix) != matrix[row]:
+matrix = [[1, 2, 3], [2, 3, 4], [4, 4, 5]]
+
+# Проверяем, является ли матрица квадратной
+is_square = True
+num_rows = len(matrix)
+
+for row in matrix:
+    if len(row) != num_rows:
+        is_square = False
         print('Матрица не квадратная')
         break
-else:
+
+if is_square:
     print('Матрица квадратная')
-
-
 
