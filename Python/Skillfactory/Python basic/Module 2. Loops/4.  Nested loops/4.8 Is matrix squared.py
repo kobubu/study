@@ -13,5 +13,5 @@ for row in test_matrix:
     if len(row) != len(test_matrix):
         is_square = False
         break
-    else:
-        continue
+
+is_square = all(len(row) == len(test_matrix) for row in test_matrix)
