@@ -13,3 +13,9 @@ temp = [[-1, 2, 3], [2, 3, 4], [4, 4, 5]]
 temp = [[abs(x) for x in row] for row in temp]
 
 print(temp)
+
+
+for i in range(len(temp)):
+    for j in range(len(temp[i])):
+        temp[i][j] = abs(temp[i][j])
+
