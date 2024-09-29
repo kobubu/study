@@ -10,14 +10,10 @@ print(more_than_n([-1, 4, 4.2, 42.2, -3.4, -5.2], 10))
 print(more_than_n([], 10))
 # []
 '''
-
+## Введите свое решение ниже
 def more_than_n(lst, n):
-    for el in lst:
-        if abs(el) <= n:
-            lst.pop(el)
-    return lst
-
-
+    # Используем списковое включение для создания нового списка
+    return [el for el in lst if abs(el) > n]
 
 
 
