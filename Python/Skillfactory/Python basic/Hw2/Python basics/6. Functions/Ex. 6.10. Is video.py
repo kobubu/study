@@ -30,10 +30,25 @@ data = {
         ]},
     ]
 }
-мы должны получить результат:
-['vid001', 'vid002', 'vid003', 'vid004'
 '''
-
-
 def find_video(data):
-    if
+    video_ids = []
+
+    # Если data является словарем
+    if isinstance(data, dict):
+        # Если есть ключ "videoID", добавляем его значение в список
+        if "videoID" in data:
+            video_ids.append(data["videoID"])
+
+        # Рекурсивно обрабатываем все значения словаря
+        for key, value in data.items():
+            video_ids.extend(find_video(value))
+
+    # Если data является списком
+    elif isinstance(data, list):
+        # Рекурсивно обрабатываем все элементы списка
+        for item in data:
+            video_ids.extend(find_video(item))
+
+    return video_ids
+
