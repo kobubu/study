@@ -19,9 +19,11 @@ True - значение пропущено, False - значение не про
 # Введите свое решение ниже
 import numpy as np
 
-mystery = np.array([ 12279., -26024.,  28745.,  np.nan,  31244.,  -2365.,  -6974.,
-        -9212., np.nan, -17722.,  16132.,  25933.,  np.nan, -16431.,
-        29810.], dtype=np.float32)
+mystery = np.array([ 12279., -26024.,  28745.,
+                    np.nan,  31244.,  -2365.,  -6974.,
+                    -9212., np.nan, -17722.,  16132.,
+                    25933.,  np.nan, -16431.,
+                    29810.], dtype=np.float32)
 
 nans_index = np.isnan(mystery)
 n_nan = np.sum(nans_index)
