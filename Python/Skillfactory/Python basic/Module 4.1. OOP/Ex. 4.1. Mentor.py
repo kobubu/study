@@ -30,9 +30,6 @@ objs: пустой список (не передаётся в качестве �
 '''
 
 
-from abc import ABC, abstractmethod
-
-# Класс Student, который уже определен
 class Student:
     def __init__(self, fio, group):
         self.fio = fio  # ФИО студента (строка)
@@ -41,64 +38,39 @@ class Student:
         self.homework_marks = []  # оценки за домашние задания
 
     def add_lect_marks(self, mark):
-        self.lect_marks.append(mark)  # Добавляем оценку за лекцию
+        self.lect_marks.append(mark)
 
     def add_homework_marks(self, mark):
-        self.homework_marks.append(mark)  # Добавляем оценку за домашнюю работу
+        self.homework_marks.append(mark)
 
     def __str__(self):
         return f"Студент {self.fio}: оценки на лекциях: {str(self.lect_marks)}; оценки за д/з: {str(self.homework_marks)}"
 
-# Базовый класс Mentor
-class Mentor(ABC):
+class Mentor():
     def __init__(self, fio, subject):
-        self.fio = fio  # ФИО преподавателя
-        self.subject = subject  # Предмет, который преподает
+        self.fio = fio
+        self.subject = subject
 
-    @abstractmethod
     def set_mark(self, student, mark):
-        raise NotImplementedError("Метод set_mark не реализован")  # Абстрактный метод, который должен быть переопределен в дочерних классах
+        raise NotImplementedError
 
-# Дочерний класс Lector
 class Lector(Mentor):
     def __init__(self, fio, subject):
-        super().__init__(fio, subject)  # Вызываем инициализатор базового класса
+        super().__init__(fio, subject)
 
     def set_mark(self, student, mark):
-        student.add_lect_marks(mark)  # Лектор ставит оценки за лекции
+        student.add_lect_marks(mark)
 
     def __str__(self):
-        return f"Лектор {self.fio}: предмет {self.subject}"  # Возвращаем строку с информацией о лекторе
+        return f"Лектор {self.fio}: предмет {self.subject}"
 
-# Дочерний класс Reviewer
 class Reviewer(Mentor):
     def __init__(self, fio, subject):
-        super().__init__(fio, subject)  # Вызываем инициализатор базового класса
+        super().__init__(fio, subject)
 
     def set_mark(self, student, mark):
-        student.add_homework_marks(mark)  # Эксперт ставит оценки за домашние задания
+        student.add_homework_marks(mark)
 
     def __str__(self):
-        return f"Эксперт {self.fio}: предмет {self.subject}"  # Возвращаем строку с информацией об эксперте
+        return f"Эксперт {self.fio}: предмет {self.subject}"
 
-# Пример использования:
-
-# Создаем студента
-student1 = Student("Иван Иванов", "Группа 1")
-
-# Создаем лектора и эксперта
-lector1 = Lector("Петр Петров", "Математика")
-reviewer1 = Reviewer("Сидор Сидоров", "Физика")
-
-# Лектор ставит оценку студенту за лекцию
-lector1.set_mark(student1, 5)
-
-# Эксперт ставит оценку студенту за домашнюю работу
-reviewer1.set_mark(student1, 4)
-
-# Выводим информацию о студенте
-print(student1)
-
-# Выводим информацию о лекторе и эксперте
-print(lector1)
-print(reviewer1)
