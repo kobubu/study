@@ -1,1 +1,1 @@
-https://lms.digital.mephi.ru/login/index.php
+1
