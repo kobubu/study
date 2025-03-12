@@ -3,8 +3,7 @@
 The server is running". Оберните эту функцию в декоратор app.route(), указав в качестве эндпоинта '/'.
  Данный эндпоинт будет соответствовать обращению к сайту по дефолтному адресу: http://localhost:5000/.
 '''
-
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -15,7 +14,8 @@ def index():
 
 @app.route('/hello')
 def hello_func():
-    return 'Hello!'
+    name = request.args.get('name')
+    return f'Hello {name}!'
 
 if __name__ == 'main':
     app.run('localhost', 5001)
