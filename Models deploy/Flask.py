@@ -2,10 +2,17 @@
 Напишите новую функцию index(), которая будет возвращать строку "Test message
 The server is running". Оберните эту функцию в декоратор app.route(), указав в качестве эндпоинта '/'.
  Данный эндпоинт будет соответствовать обращению к сайту по дефолтному адресу: http://localhost:5000/.
+ добавить обращение по времени
 '''
 from flask import Flask, request
+from datetime import datetime
 
 app = Flask(__name__)
+
+@app.route('/time')
+def time():
+    now = datetime.now()
+    return {'time': now}
 
 @app.route('/')
 def index():
