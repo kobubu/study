@@ -101,8 +101,7 @@ volumes:
 
 ### Шаг 3: Создайте файл `hadoop.env`
 ```bash
-# Создаем файл с настройками
-echo 'CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+CORE_CONF_fs_defaultFS=hdfs://namenode:8020
 CORE_CONF_hadoop_http_staticuser_user=root
 HDFS_CONF_dfs_webhdfs_enabled=true
 HDFS_CONF_dfs_permissions_enabled=false
@@ -116,7 +115,7 @@ YARN_CONF_yarn_timeline___service_enabled=true
 YARN_CONF_yarn_timeline___service_generic___application___history_enabled=true
 YARN_CONF_yarn_resourcemanager_system___metrics___publisher_enabled=true
 YARN_CONF_yarn_resourcemanager_hostname=resourcemanager
-YARN_CONF_yarn_timeline___service_hostname=historyserver' > hadoop.env
+YARN_CONF_yarn_timeline___service_hostname=historyserver
 ```
 
 ## 3. **Запуск кластера:**
