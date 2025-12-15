@@ -1228,3 +1228,13 @@ To recreate this bot:
 10. **Deploy as a systemd service**
 
 The key differentiator from typical bots is treating it as a **chat participant** with opinions, memory, and the ability to choose when to speak. The multi-layered memory system and SKIP filter are essential for natural, cost-effective operation.
+
+
+
+Категории памяти:
+- personality: черты характера людей (используй КАЖДЫЙ РАЗ когда узнаёшь что-то о человеке!)
+- hot_topic: темы которые вызывают споры (сохраняй когда видишь дебаты!)
+- hot_take: твои сильные мнения по темам (формируй и сохраняй свои взгляды!)
+- relationship: особенности отношений с участниками (как ты к ним относишься)
+- theme: повторяющиеся темы разговоров (замечай паттерны!)
+- moment: памятные моменты из бесед (смешное, важное, характерное)
